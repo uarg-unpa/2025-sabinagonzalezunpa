@@ -6,13 +6,15 @@ public class Libro {
     String titulo;
     String autor;
     String editorial;
+    String añodepublicacion;
 
-    public Libro(String edicion, String titulo, String autor, String editorial)
+    public Libro(String edicion, String titulo, String autor, String editorial, String añodepublicacion)
     {
         this.edicion=edicion;
         this.titulo=titulo;
         this.autor=autor;
         this.editorial=editorial;
+        this.añodepublicacion=añodepublicacion;
     }
     public String getEdicion()
     {
@@ -45,5 +47,13 @@ public class Libro {
     public void setEditorial(String editorial)
     {
         this.editorial=editorial;
+    }
+    public String getAñodepublicacion()
+    {
+        return this.añodepublicacion;
+    }
+    public void setAñodepublicacion(String añodepublicacion)
+    {
+        this.añodepublicacion=añodepublicacion;
     }
 }  
