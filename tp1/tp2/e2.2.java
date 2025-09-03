@@ -2,11 +2,11 @@ package tp1.tp2;
 
 public class Libro {
 
-    String edicion;
-    String titulo;
-    String autor;
-    String editorial;
-    String añodepublicacion;
+    private String edicion;
+    private String titulo;
+    private String autor;
+    private String editorial;
+    private String añodepublicacion;
 
     public Libro(String edicion, String titulo, String autor, String editorial, String añodepublicacion)
     {

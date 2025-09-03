@@ -2,10 +2,10 @@ package tp1.tp2;
 
 public class Cancion {
  
-  String nombre;
-  String cantante;
-  String compositor;
-  String generomusical;
+  private String nombre;
+  private String cantante;
+  private String compositor;
+  private String generomusical;
   
   public Cancion(String nombre, String cantante, String compositor, String generomusical)
   {

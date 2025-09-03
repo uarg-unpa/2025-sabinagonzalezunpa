@@ -2,12 +2,12 @@ package tp1.tp2;
 
 public class Alumno {
     
-    String nombre;
-    String apellido;
-    String carrera;
-    int edad;
-    int legajo;
-    int dni; 
+    private String nombre;
+    private String apellido;
+    private String carrera;
+    private int edad;
+    private int legajo;
+    private int dni; 
 
     public Alumno(String nombre, String apellido, String carrera, int edad, int legajo, int dni)
     {

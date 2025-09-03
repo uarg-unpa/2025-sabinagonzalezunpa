@@ -2,19 +2,19 @@ package tp1.tp2;
 
 public class Domicilio {
   
-    String barrio;
-    String provincia;
-    String ciudad;
-    int numero;
-    int CódigoPostal;
+    private String barrio;
+    private String provincia;
+    private String ciudad;
+    private int numero;
+    private int códigoPostal;
 
-    public Domicilio(String barrio, String provincia, String ciudad, int numero, int CódigoPostal)
+    public Domicilio(String barrio, String provincia, String ciudad, int numero, int códigoPostal)
     {
         this.barrio=barrio;
         this.provincia=provincia;
         this.ciudad=ciudad;
         this.numero=numero;
-        this.CódigoPostal=CódigoPostal; 
+        this.códigoPostal=códigoPostal; 
     }
     public String getBarrio()
     {
@@ -50,10 +50,10 @@ public class Domicilio {
     }
     public int getCódigoPostal()
     {
-         return this.CódigoPostal;
+         return this.códigoPostal;
     }
     public void setCódigoPostal(int CódigoPostal)
     {
-        this.CódigoPostal=CódigoPostal;
+        this.códigoPostal=CódigoPostal;
     }
 }
