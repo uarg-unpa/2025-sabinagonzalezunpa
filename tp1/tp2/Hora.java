@@ -8,7 +8,7 @@ public class Hora {
 
     public Hora(int hora, int minutos, int segundos)
     {
-        if((esValida)(hora, minutos, segundos)) {
+        if(esHoraValida(hora, minutos, segundos)) {
         this.hora=hora;
         this.minutos=minutos;
         this.segundos=segundos;
@@ -53,6 +53,6 @@ public class Hora {
         return (hora * 60) + minutos + (segundos / 60);
     }
     public String mostrarHora (){
-        return (hora , minutos, segundos);
+        return ( hora , minutos, segundos);
     }
 }
