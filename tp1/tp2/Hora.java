@@ -23,8 +23,7 @@ public class Hora {
         }else{
             this.segundos=0;
         }    
-        }
-    }
+     }
 
     public int getHora()
     {

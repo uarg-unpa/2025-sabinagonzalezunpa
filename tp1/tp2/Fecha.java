@@ -8,16 +8,21 @@ public class Fecha {
 
 public Fecha(int dia, int mes, int año)
 {
-    if(esValida(dia, mes, año)){
+    if( dia > 1 && dia < 31){
         this.dia=dia;
-        this.mes=mes;
-        this.año=año;
     }else{
         this.dia=1;
+    }
+    if ( mes > 1 && mes < 12){
+        this.mes=mes;
+    }else{
         this.mes=1;
+    }
+    if ( año > 2000 && año < 2010){
+        this.año=año;
+    }else{
         this.año=2013;
     }
 }
-
-
 }
+public
