@@ -8,14 +8,21 @@ public class Hora {
 
     public Hora(int hora, int minutos, int segundos)
     {
-        if(esHoraValida(hora, minutos, segundos)) {
-        this.hora=hora;
-        this.minutos=minutos;
-        this.segundos=segundos;
+        if(hora > 0 && hora <12) {
+            this.hora=hora;
         }else{
             this.hora=0;
+        }
+        if (minutos > 0 && mimutos < 60){
+            this.minutos=minutos;
+        }else{
             this.minutos=0;
+        }
+        if( segundos> 0 && segundos < 60){
+            this.segundos=segundos;
+        }else{
             this.segundos=0;
+        }    
         }
     }
 
