@@ -13,12 +13,12 @@ public class Hora {
         }else{
             this.hora=0;
         }
-        if (minutos > 0 && mimutos < 60){
+        if (minutos > 0 && mimutos < 59){
             this.minutos=minutos;
         }else{
             this.minutos=0;
         }
-        if( segundos> 0 && segundos < 60){
+        if( segundos> 0 && segundos < 59){
             this.segundos=segundos;
         }else{
             this.segundos=0;
@@ -29,36 +29,49 @@ public class Hora {
     {
         return this.hora;
     }
+    public void setHora(int hora)
+    {
+        this.hora=hora;
+    }
     public int getMinutos()
     {
         return this.minutos;
+    }
+    public void setMinutos(int minutos)
+    {
+        this.minutos=minutos;
     }
     public int getSegundos()
     {
         return this.segundos;
     }
-    public void setHora(int hora)
-    {
-        if (hora >= 0 && hora <= 24){
-        this.hora=hora;
-        }
-    }
-    public void setMinutos(int minutos)
-    {
-        if (minutos >= 0 && minutos <= 60){
-        this.minutos=minutos; 
-        }
-    }
     public void setSegundos(int segundos)
     {
-        if (segundos >= 0 && segundos <= 60){
-            this.segundos=segundos;
+        this.segundos=segundos; 
+    }
+
+    public void Cambiarhora(int nuevahora)
+    {
+        if (nuevahora >= 0 && nuevahora < 24){
+        this.hora=nuevahora;
+        }
+    }
+    public void Cambiarminutos(int nuevosminutos)
+    {
+        if (nuevosminutos >= 0 && nuevosminutos < 60){
+        this.minutos=nuevosminutos; 
+        }
+    }
+    public void Cambiarsegundos(int nuevossegundos)
+    {
+        if (nuevossegundos >= 0 && nuevossegundos < 60){
+            this.segundos=nuevossegundos;
         }
     }
     public int HoraenMinutos (){
         return (hora * 60) + minutos + (segundos / 60);
     }
-    public String mostrarHora (){
+    public String MostrarHora (){
         return ( hora , minutos, segundos);
     }
 }

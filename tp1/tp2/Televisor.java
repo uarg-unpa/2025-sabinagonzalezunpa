@@ -2,58 +2,82 @@ package tp1.tp2;
 
 public class Televisor {
 
-    private boolean encenderCanal;
-    private int subirCanal;
-    private int bajarCanal;
-    private int subirVolumen;
-    private int bajarVolumen;
+    private boolean encendido;
+    private int canal;
+    private int canalAnterior;
+    private int volumen;
 
-    public Televisor (boolean encenederCanal, int subirCanal, int bajarCanal, int subirVolumen, int bajarVolumen)
+    public Televisor (boolean encendido, int canal, int canalAnterior, int volumen)
     {
-        this.encenderCanal=encenederCanal;
-        this.subirCanal=subirCanal;
-        this.bajarCanal=bajarCanal;
-        this.subirVolumen=subirVolumen;
-        this.bajarVolumen=bajarVolumen;
+        this.encendido=false;
+        this.canal=1;
+        this.canalAnterior=1;
+        this.volumen=10;
     }
-    public boolean getEncenderCanal()
+    public boolean getEncendido()
     {
-        return this.encenderCanal;
+        return this.encendido;
     }
-    public void setEncenderCanal(boolean encenderCanal)
+    public void setEncendido(boolean encendido)
     {
-        this.encenderCanal=encenderCanal;
+        this.encendido=encendido;
     }
-    public int getSubirCanal()
+    public int getcanal()
     { 
-        return this.subirCanal;
+        return this.canal;
     }
-    public void setSubirCanal(int subirCanal)
+    public void setCanal(int canal)
     {
-        this.subirCanal=subirCanal;
+        if(canal > 0){
+            this.canalAnterior=canal;
+            this.canal=canal;
+        }
     }
-    public int getBajarCanal()
+    public int getCanalAnterior()
     {
-        return this.bajarCanal;
+        return this.canalAnterior;
     }
-    public void setBajarCanal(int bajarCanal)
+    public void setCanalAnterior(int canalAnterior)
     {
-        this.bajarCanal=bajarCanal;
+        this.canalAnterior=canalAnterior;
     }
-    public int getSubirVolumen()
+    public int getVolumen()
     {
-        return this.subirVolumen;
+        return this.volumen;
     }
-    public void setSubirVolumen(int subirVolumen)
+    public void setVolumen(int volumen)
     {
-        this.subirVolumen=subirVolumen;
+        if( volumen >= 0 && volumen <= 100){
+        this.volumen=volumen;
+        }
     }
-    public int getBajarVolumen()
-    {
-        return this.bajarVolumen;
+    public void encender(){
+        this.encendido=true;
     }
-    public void setBajarVolumen(int bajarVolumen)
-    {
-        this.bajarVolumen=bajarVolumen;
+    public void apagar(){
+        this.encendido=false;
     }
+    public void subirCanal(){
+        this.canalAnterior=canal++;
+    }
+    public void bajarCanal(){
+        if (canal > 1){
+            this.canalAnterior=canal--;
+        }    
+    }
+    public void subirVolumen(){
+        if( volumen < 100){
+            volumen ++;
+        }
+    }
+    public void bajarVolumen(){
+        if (volumen > 0){
+            volumen--;
+        }
+    }
+    public void volverCanalAnterior(){
+        int temp=canal;
+        canal=canalAnterior;
+        canalAnterior=temp;
+    } 
 }

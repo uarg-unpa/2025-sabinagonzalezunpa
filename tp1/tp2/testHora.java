@@ -8,4 +8,8 @@ public class testHora {
 System.out.println(" Hora 1: " + hora1.mostrarHora());
 System.out.println(" Hora 2: " + hora2.HoraenMinutos());
 
+hora1.Cambiarhora();
+hora1.Cambiarminutos();
+hora1.Cambiarsegundos();
+
 }
