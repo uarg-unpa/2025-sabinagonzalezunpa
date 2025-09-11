@@ -4,7 +4,7 @@ public class MainPelicula{
     public static void main(String [] args){
     Scanner scanner= new Scanner(System.in);
 
-    Genero g1 = new Genero("Comedia" , "13.3");
+    Genero g1 = new Genero("Comedia" , 13);
     Pelicula p1 = new Pelicula( " Mi pobre angelito", " Chris Columbus" , "Comedia", 1991 , 20 , 2 );
     
         System.out.println("Ingrese título de la película:");
@@ -26,7 +26,7 @@ public class MainPelicula{
         int duracion1 = scanner.nextInt();
         scanner.nextLine();
 
-        Genero g2 = new Genero("Terror" , "23.5");
+        Genero g2 = new Genero("Terror" , 23);
         Pelicula p2 = new Pelicula ( "Top Gun: Maverick" , " Joseph Kosinski" , "Accion", 2022 , 13 , 2 );
     
         System.out.println("Ingrese título de la película:");
