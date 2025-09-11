@@ -48,8 +48,13 @@ public class testPelicula{
     Pelicula p2 = new Pelicula ( "Top Gun: Maverick" , " Joseph Kosinski" , "Accion", 2022 , 13 , 2 );
     Genero g2 = new Genero("");
  
-    System.out.println("Pelicula 1: " + p1.mostrarPelicula());
-    System.out.println("Pelicula 2:" + p2.mostrarPelicula());
-}
+    System.out.println(p1);
+    System.out.println("¿Es para adulto? " + p1.esParaAdulto());
+    System.out.println("Duracion en minutos" + p1.calcularDuracionMinutos());
 
+    System.out.println(p2);
+    System.out.println("¿ Es para adulto?" + p2.esParaAdulto());
+    System.out.println("Duracion en minutos" + p2.calcularDuracionMinutos());
+
+}
 } 
