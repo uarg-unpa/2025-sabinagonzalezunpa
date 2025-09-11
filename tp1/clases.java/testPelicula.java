@@ -1,4 +1,8 @@
+import java.util.Scanner;
 public class testPelicula{
+
+    Scanner scan= new Scanner(System.in);
+    
 
     public static void main(String [] args){
     Pelicula p1 = new Pelicula( " Mi pobre angelito", " Chris Columbus" , "Comedia", 1991 , 20 , 2 );
