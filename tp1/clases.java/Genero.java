@@ -24,5 +24,7 @@ public class Genero{
     {
         this.rating=rating;
     }
+    public String toString(){
+        return "[ " + this.nombre + "] [ " + this.rating+ "]";
     
 }
