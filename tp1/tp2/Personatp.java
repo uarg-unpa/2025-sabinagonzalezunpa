@@ -85,5 +85,4 @@ public class Persona{
     {
         return "[" + this.nombre + "] ["+ this.edad +"] [" + this.dni +"] [" + this.sexo +"] [" + this.peso +"] [" + this.altura +"]";
     }
-    
 }
