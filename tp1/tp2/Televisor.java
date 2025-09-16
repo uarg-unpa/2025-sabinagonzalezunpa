@@ -67,17 +67,16 @@ public class Televisor {
     }
     public void subirVolumen(){
         if( volumen < 100){
-            volumen ++;
+            this.volumen ++;
         }
     }
     public void bajarVolumen(){
         if (volumen > 0){
-            volumen--;
-        }
+            this.volumen --;
     }
     public void volverCanalAnterior(){
         int temp=canal;
-        canal=canalAnterior;
-        canalAnterior=temp;
+        this.canal=this.canalAnterior;
+        this.canalAnterior=temp;
     } 
 }
