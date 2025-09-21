@@ -5,7 +5,7 @@ public class PilaTp {
     private int cima;       
     private final int max; 
     
-    public Pilatp(int capacidad){
+    public PilaTp(int capacidad){
         max= capacidad; 
         elementos =new char[max];
         cima = -1; 
@@ -22,6 +22,22 @@ public boolean estaLlena(){
         return true;
     }else{
         return false;
+    }
+}
+public boolean meter(char elem){
+    if(cima < max - 1){
+        cima = cima + 1;
+        elementos[cima] = elem;
+        return true;
+    }else{
+        return false;
+    }
+}
+public char sacar(){
+    if(cima >= 0){
+        char elem = elementos[cima];
+        cima= cima -1;
+        return elem;
     }
 }
 }
