@@ -37,4 +37,6 @@ public char sacar(){
 }
     return aux;
 }
-public char elementosCima()
+public char elementosCima(){
+    
+}
