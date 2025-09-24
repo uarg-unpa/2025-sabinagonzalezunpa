@@ -2,12 +2,11 @@ package Pilas;
 
 public class PilaTp {
     private char[] elementos; 
-    private int cima;       
-    private final int max; 
+    private char cima;       
+    private final char maxpila = 10; 
     
-    public PilaTp(int capacidad){
-        max= capacidad; 
-        elementos =new char[max];
+    public PilaTp(){
+        elementos = new char[maxpila];
         cima = -1; 
 }
 public boolean estaVacia(){
@@ -18,26 +17,24 @@ public boolean estaVacia(){
     }
 }
 public boolean estaLlena(){
-    if(cima == max -1){
+    if(cima == maxpila -1){
         return true;
     }else{
         return false;
     }
 }
-public boolean meter(char elem){
-    if(cima < max - 1){
-        cima = cima + 1;
+public void meter(char elem){
+    if(!this.estaLlena()){
+        cima++;
         elementos[cima] = elem;
-        return true;
-    }else{
-        return false;
     }
 }
 public char sacar(){
-    if(cima >= 0){
-        char elem = elementos[cima];
-        cima= cima -1;
-        return elem;
-    }
+    char aux = ' ';
+    if(!this.estaVacia()){
+        aux = elementos[cima];
+        cima--;       
+}
+    return aux;
 }
 }
