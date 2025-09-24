@@ -1,10 +1,10 @@
-package Pilas;
+package Punto 3;
 
-public class MainPilaTp {
+public class MainPilaChar {
     public static void main(String[] args) {
         
         String palabra = "Estamos";
-        PilaTp p = new PilaTp();
+        PilaChar p = new PilaChar();
 
         for (int i= 0; i < palabra.length(); i++){
             char letra = palabra.charAt(i);

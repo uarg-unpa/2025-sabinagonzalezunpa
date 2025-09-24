@@ -1,11 +1,11 @@
-package Pilas;
+package Pila;
 
-public class PilaTp {
+public class Pila5 {
     private char[] elementos; 
-    private char cima;       
-    private final char maxpila = 10; 
+    private int cima;       
+    private final int maxpila = 10; 
     
-    public PilaTp(){
+    public Pila5(){
         elementos = new char[maxpila];
         cima = -1; 
 }
@@ -25,16 +25,16 @@ public boolean estaLlena(){
 }
 public void meter(char elem){
     if(!this.estaLlena()){
-        cima++;
+        cima = cima + 1;
         elementos[cima] = elem;
     }
 }
 public char sacar(){
-    char aux = ' ';
+    char aux = ' ' ;
     if(!this.estaVacia()){
         aux = elementos[cima];
-        cima--;       
+        cima = cima - 1;       
 }
     return aux;
 }
-}
+public char elementosCima()
