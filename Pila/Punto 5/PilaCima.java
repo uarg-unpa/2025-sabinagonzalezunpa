@@ -1,11 +1,9 @@
-package Pila;
-
-public class Pila5 {
+public class PilaCima {
     private char[] elementos; 
     private int cima;       
     private final int maxpila = 10; 
     
-    public Pila5(){
+    public PilaCima(){
         elementos = new char[maxpila];
         cima = -1; 
 }
@@ -37,6 +35,12 @@ public char sacar(){
 }
     return aux;
 }
-public char elementosCima(){
-    
+public char elementoCima(){
+    char x;
+    if(!this.estaVacia()){
+        x = this.sacar();
+        this.meter(x);
+        return x;
+    }
+}
 }
