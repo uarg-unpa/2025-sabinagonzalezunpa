@@ -17,6 +17,7 @@ public class MainPilaOperaciones {
             }
         }   
     }
+    
     int i = 1;
     int N = 5;
     while (!pilap.estaVacia() && i <= N){
