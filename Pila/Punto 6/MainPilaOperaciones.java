@@ -23,5 +23,25 @@ public class MainPilaOperaciones {
         X = pilap.sacar();
         i++;
     }
+    while (!pilap.estaVacia() && i <= N){
+        X = pilap.sacar();
+        auxpila.meter(X);
+        i++;
+    }
+    while (!auxpila.estaVacia()){
+        pilap.meter(auxpila.sacar());
+    }
+
+    while (!pilap.estaVacia()){
+        X = pilap.sacar();
+    }
+
+    while (!pilap.estaVacia()){
+        X = pilap.sacar();
+        auxpila.meter(X);
+    }
+    while (!auxpila.estaVacia()){
+        pilap.meter(auxpila.sacar());
+    }
 }
 }
