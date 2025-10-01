@@ -34,7 +34,7 @@ public class PilaCopia {
 
     public PilaCopia copiar() {
         PilaCopia auxpilac = new PilaCopia();
-        PilaCopia copia = new PilaCopia();
+        PilaCopia pilac = new PilaCopia();
         int x;
 
         while (!this.estaVacia()) {
@@ -45,9 +45,9 @@ public class PilaCopia {
         while (!auxpilac.estaVacia()) {
             x = auxpilac.sacar();
             this.meter(x);
-            copia.meter(x);
+            pilac.meter(x);
         }
 
-        return copia;
+        return pilac;
     }
 }
