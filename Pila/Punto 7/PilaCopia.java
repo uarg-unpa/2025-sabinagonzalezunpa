@@ -1,39 +1,53 @@
 public class PilaCopia {
-
-    private int [] elementos;
+    private int[] elementos;
     private int cima;
     private final int maxpila = 15;
-    
-    public PilaCopia(){
-        elementos = new int [maxpila];
+
+    public PilaCopia() {
+        elementos = new int[maxpila];
         cima = -1;
     }
-    public boolean estaVacia(){
-        if(cima == -1){
-            return true;
-        }else{
-            return false;
+
+    public boolean estaVacia() {
+        return cima == -1;
+    }
+
+    public boolean estaLlena() {
+        return cima == maxpila - 1;
+    }
+
+    public void meter(int elem) {
+        if (!estaLlena()) {
+            cima++;
+            elementos[cima] = elem;
         }
     }
-    public boolean estaLlena(){
-        if(cima == maxpila -1){
-            return true;
-        }else{
-            return false;
+
+    public int sacar() {
+        int aux = -1;
+        if (!estaVacia()) {
+            aux = elementos[cima];
+            cima--;
         }
+        return aux;
     }
-    public void meter(char elem){
-    if(!this.estaLlena()){
-        cima = cima + 1;
-        elementos[cima] = elem;
+
+    public PilaCopia copiar() {
+        PilaCopia auxpilac = new PilaCopia();
+        PilaCopia copia = new PilaCopia();
+        int x;
+
+        while (!this.estaVacia()) {
+            x = this.sacar();
+            auxpilac.meter(x);
+        }
+
+        while (!auxpilac.estaVacia()) {
+            x = auxpilac.sacar();
+            this.meter(x);
+            copia.meter(x);
+        }
+
+        return copia;
     }
-}
-    public int sacar(){
-    int aux = - 1 ;
-    if(!this.estaVacia()){
-        aux = elementos[cima];
-        cima = cima - 1;       
-}
-    return aux;
-}
 }
