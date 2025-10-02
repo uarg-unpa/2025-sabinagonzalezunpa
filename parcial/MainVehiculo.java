@@ -23,7 +23,7 @@ public class MainVehiculo {
 
         Vehiculo v2=new Vehiculo(tipo2 , vel2 , precio2);
 
-        System.out.println("Ingrese el porcentaje de descuento para v1:" + v1.aplicarDescuento(10));
+        System.out.println("El precio del vehiculo 1 con el descuento es:" + v1.aplicarDescuento(10));
 
         v2.aumentarVelocidadMaxima(5);
 
