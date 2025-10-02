@@ -37,12 +37,11 @@ public class Vehiculo{
     }
 
     public double aplicarDescuento(double porcentaje ){
-        if(this.precio > 0)
-        this.precio=this.precio - porcentaje;
+        this.precio = this.precio - (this.precio * (porcentaje/100));
         return this.precio;
     }
     public int aumentarVelocidadMaxima(int incremento ){
-        this.velocidadMaxima= this.velocidadMaxima + incremento;
+        this.velocidadMaxima = this.velocidadMaxima + incremento;
         return this.velocidadMaxima;
     }
      public boolean mayorVelocidad( Vehiculo V){ 
@@ -52,4 +51,7 @@ public class Vehiculo{
             return false;
         }
      }
+     public String toString(){
+        return "[ " + this.tipo + "] [ " + this.velocidadMaxima + "] [ " + this.precio + "]";
+}
 }
