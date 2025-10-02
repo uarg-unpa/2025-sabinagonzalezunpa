@@ -36,9 +36,8 @@ public class Vehiculo{
         this.precio=precio;
     }
 
-    public double aplicarDescuento(double porcentaje ){
+    public void aplicarDescuento(double porcentaje ){
         this.precio = this.precio - (this.precio * (porcentaje/100));
-        return this.precio;
     }
     public int aumentarVelocidadMaxima(int incremento ){
         this.velocidadMaxima = this.velocidadMaxima + incremento;
