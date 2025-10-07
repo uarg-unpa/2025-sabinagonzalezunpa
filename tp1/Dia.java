@@ -7,7 +7,7 @@ public class Dia {
         char Dia;
 
         System.out.println("Ingrese dia");
-        Dia = entrada.nextInt();
+        Dia = scanner.nextInt();
         switch (Dia)
         { 
             case 'L': {

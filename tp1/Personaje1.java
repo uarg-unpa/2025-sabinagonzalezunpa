@@ -1,10 +1,10 @@
-public class Personaje {
+public class Personaje1 {
     private String nombre;
     private int niveldenergia;
     private String ptsdevida;
     private String arma;
 
-    public Personaje(String nombre, int niveldenergia, String ptsdevida, String arma){
+    public Personaje1(String nombre, int niveldenergia, String ptsdevida, String arma){
         this.nombre = nombre;
         this.niveldenergia = niveldenergia;
         this.ptsdevida = ptsdevida;
@@ -50,6 +50,6 @@ public class Personaje {
     }
 
     public String toString(){
-        return "Personaje:" +nombre+ ", Nivel de Energia:" +niveldenergia+ ", Puntos de Vida:" +ptsdevida+ ", Arma:" +arma+;
+        return "Personaje:" +nombre+ ", Nivel de Energia:" +niveldenergia+ ", Puntos de Vida:" +ptsdevida+ ", Arma: " +arma+ ""; 
     }
 }

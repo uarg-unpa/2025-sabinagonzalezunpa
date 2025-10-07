@@ -1,4 +1,3 @@
-
 public class Empleado {
     
     private int legajo;

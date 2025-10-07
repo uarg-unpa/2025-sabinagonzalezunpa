@@ -6,11 +6,11 @@ public class NumMayor {
         Scanner entrada = new Scanner(System.in);  
         int nro1, nro2, nro3;
 
-        System.out.print(s:"Ingrese el primer número");
+        System.out.print("Ingrese el primer número");
         nro1 = entrada.nextInt();
-        System.out.print(s:"Ingrese el segundo número"); 
+        System.out.print("Ingrese el segundo número"); 
         nro2 = entrada.nextInt();
-        System.out.print(s:"Ingrese el tercer número");
+        System.out.print("Ingrese el tercer número");
         nro3 = entrada.nextInt();
 
         if (nro1 > nro2 && nro1 > nro3) 

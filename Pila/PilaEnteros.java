@@ -1,6 +1,4 @@
-package Pilas;
-
- public class PilaEnteros {
+public class PilaEnteros {
     private int[] elementos; // Array para almacenar los elementos
     private int cima;       
     private final int MAX = 10; // Capacidad máxima de la pila

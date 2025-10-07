@@ -13,7 +13,7 @@ public class Hora {
         }else{
             this.hora=0;
         }
-        if (minutos > 0 && mimutos < 59){
+        if (minutos > 0 && minutos < 59){
             this.minutos=minutos;
         }else{
             this.minutos=0;
@@ -70,8 +70,5 @@ public class Hora {
     }
     public int HoraenMinutos (){
         return (hora * 60) + minutos + (segundos / 60);
-    }
-    public String MostrarHora (){
-        return ( hora , minutos, segundos);
     }
 }
