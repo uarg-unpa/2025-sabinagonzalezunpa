@@ -33,7 +33,7 @@ public class ColaChar {
         return frente;
     }
 
-     public char peek() {
+    public char peek()  {
         if (!estaVacia()) {
             return elementos[0];
         }

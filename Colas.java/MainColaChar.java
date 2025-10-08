@@ -11,7 +11,7 @@ public class MainColaChar {
             char elem = scanner.next().charAt(0);
             cola.encolar(elem);
         }
-
+        
         System.out.println("Cola actual: " + cola);
 
         System.out.println("Desencolando 2 comandos...");
