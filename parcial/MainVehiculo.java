@@ -36,6 +36,7 @@ public class MainVehiculo {
             (v2.mayorVelocidad(v1));
             System.out.println("El vehiculo con mayor o igual velocidad es v2");
             }
+            
+        scanner.close();
     }
-    scanner.close();
 }

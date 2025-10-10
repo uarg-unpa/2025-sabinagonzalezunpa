@@ -38,5 +38,4 @@ public class MainColaChar {
 
         scanner.close();
     }
-
 }
