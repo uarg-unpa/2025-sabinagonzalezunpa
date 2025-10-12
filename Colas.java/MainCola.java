@@ -21,7 +21,7 @@ public class MainCola {
                     if (){
                         System.out.println("Error: La cola está llena (máximo 10 tareas). No se puede encolar " + tarea);
                     } else {
-                        cola.;
+                        cola;
                         System.out.println("Tarea " + tarea + " encolada con éxito.");
                     }
                     break;

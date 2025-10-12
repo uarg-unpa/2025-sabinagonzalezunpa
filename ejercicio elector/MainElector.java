@@ -15,7 +15,7 @@ public class MainElector {
         int clase1 = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Ingrese el domicilio del elector 1:");
-        String domicilio1 = scanner.nextLine();
+        Domicilio domicilio1 = scanner.nextLine();
 
         Elector e1 = new Elector (nombre1 , apellido1 , matricula1 , clase1 , domicilio1);
 
@@ -30,7 +30,7 @@ public class MainElector {
         int clase2 = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Ingrese el domicilio del elector 2:");
-        String domicilio2 = scanner.nextLine();
+        Domicilio domicilio2 = scanner.nextLine();
 
         Elector e2 = new Elector (nombre2 , apellido2 , matricula2 , clase2 , domicilio2);
 
@@ -45,7 +45,7 @@ public class MainElector {
         int clase3 = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Ingrese el domicilio del elector 3:");
-        String domicilio3 = scanner.nextLine();
+        Domicilio domicilio3 = scanner.nextLine();
 
         Elector e3 = new Elector (nombre3 , apellido3 , matricula3 , clase3 , domicilio3);
 
@@ -60,7 +60,7 @@ public class MainElector {
         int clase4 = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Ingrese el domicilio del elector 4:");
-        String domicilio4 = scanner.nextLine();
+        Domicilio domicilio4 = scanner.nextLine();
 
         Elector e4 = new Elector (nombre4 , apellido4 , matricula4 , clase4 , domicilio4);
 
@@ -75,7 +75,7 @@ public class MainElector {
         int clase5 = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Ingrese el domicilio del elector 5:");
-        String domicilio5 = scanner.nextLine();
+        Domicilio domicilio5 = scanner.nextLine();
 
         Elector e5 = new Elector (nombre5 , apellido5 , matricula5 , clase5 , domicilio5);
 
