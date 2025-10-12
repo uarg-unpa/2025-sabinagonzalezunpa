@@ -29,6 +29,7 @@ public class MainVehiculo {
         System.out.println("El precio del vehiculo 1 con el descuento es:" + v1.getPrecio());
 
         v2.aumentarVelocidadMaxima(5);
+        System.out.println("La nueva velocidad del vehiculo 2 es:" + v2.getVelocidadMaxima());
 
         if (v1.mayorVelocidad(v2)) {
             System.out.println("El vehículo con mayor velocidad es v1");
