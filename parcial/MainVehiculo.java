@@ -30,12 +30,14 @@ public class MainVehiculo {
 
         v2.aumentarVelocidadMaxima(5);
 
-        if(v1.mayorVelocidad(v2)){
-            System.out.println("El vehiculo con mayor velocidad es v1");
-        }else{
-            (v2.mayorVelocidad(v1));
-            System.out.println("El vehiculo con mayor o igual velocidad es v2");
-            }
+        if (v1.mayorVelocidad(v2)) {
+            System.out.println("El vehículo con mayor velocidad es v1");
+        } else if (v2.mayorVelocidad(v1)) {
+            System.out.println("El vehículo con mayor velocidad es v2");
+        } else {
+            System.out.println("Ambos vehículos tienen la misma velocidad");
+        }
+
             
         scanner.close();
     }
