@@ -1,11 +1,11 @@
-public class Colas3 {
+public class ColasContar {
 
     private final int MAX = 5;
     private int frente;
     private int fin; 
     private int [] elementos; 
 
-    public Colas3 (){
+    public ColasContar (){
         elementos = new int[MAX];
         frente = 0;
         fin = 0; 
@@ -32,12 +32,7 @@ public class Colas3 {
         return aux;   
     }
 
-    public void ElminarElementosRepetidos(){
-        Colas3 aux= new Cola3();
-
-        while(!this.estaVacia()){
-            int elem
-        }
+    public int contar(){
+        return fin; 
     }
-    
 }

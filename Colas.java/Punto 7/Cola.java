@@ -1,24 +1,21 @@
-public class Colas2 {
-
-    private final int MAX = 5;
+public class Cola {
+    public class ColaInt {
+    private int [] elementos;
     private int frente;
-    private int fin; 
-    private int [] elementos; 
+    private int fin;
+    private final int MAX = 10;
 
-    public Colas2 (){
-        elementos = new int[MAX];
+    public ColaInt (){
+        elementos = new int [MAX];
         frente = 0;
-        fin = 0; 
+        fin = 0;
     }
-
     public boolean estaVacia(){
-        return fin == 0;
+        return fin == 0; 
     }
-
     public boolean estaLlena(){
         return fin == MAX; 
     }
-
     public void encolar(int elem){
         elementos[fin] = elem;
         fin++;
@@ -29,10 +26,8 @@ public class Colas2 {
             elementos[i] = elementos [i + 1];
         }
         fin--; 
-        return aux;   
+        return aux;
     }
-
-    public int contar(){
-        return fin; 
-    }
+    
+}
 }
