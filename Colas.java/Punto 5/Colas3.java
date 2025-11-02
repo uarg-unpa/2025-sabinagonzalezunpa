@@ -32,12 +32,35 @@ public class Colas3 {
         return aux;   
     }
 
-    public void ElminarElementosRepetidos(){
+    public int ElminarElementosRepetidos(){
         Colas3 aux= new Cola3();
+        Cola3 aux2 = new Colas3();
+        int eliminados = 0;
 
         while(!this.estaVacia()){
-            int elem
+            int elem = this.desencolar();
+
+        boolean encontrado = false;
+
+        while (!aux.estaVacia()){
+            int x = aux.desencolar();
+            if(elem == x){
+                encontrado = true;
+                aux2.encolar(x);
+            }
         }
+        while(!aux2.estaVacia()){
+            aux.encolar(aux2.desencolar());
+        }
+        if(!encontrado){
+            aux.encolar(elem);
+        }else{
+            eliminados ++;
+        }
+        }
+        while(!aux.estaVacia()){
+            this.encolar(aux.desencolar());
+        }
+        return eliminados;
     }
-    
 }
