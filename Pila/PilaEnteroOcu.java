@@ -1,10 +1,10 @@
-public class PilaEntero{
+public class PilaEnteroOcu{
 
     private int[] elementos; 
     private int cima;       
     private final int MAX = 10; 
 
-    public PilaEntero() {
+    public PilaEnteroOcu() {
         elementos = new int[MAX]; 
         cima = -1;
         
@@ -41,23 +41,23 @@ public class PilaEntero{
             return elem;    
     }
     }
-    public int contOcurrencia(int elemen){
-        Pila aux = new Pila();
-        contador=0;
+    public int contarOcurrencias(int e){
+        PilaEnteroOcu aux = new PilaEnteroOcu();
+        int contador = 0;
 
 
         while (!estaVacia()){
-            int elemento = sacar();
-            if( elemento = elemen){
+            int elemento = this.sacar();
+            if( elemento == e){
                 contador ++;
-                aux.meter(elementos);
             }
+            aux.meter(elementos);
         }
         // restaurar
         while (!aux.estaVacia()){
             insertar(aux.sacar());
-            return contador;
         }
+        return contador;
     }
 }  
 }
