@@ -53,5 +53,4 @@ public class Deportista {
     public String toString(){
         return "Nombre: " + nombre + " Edad: " + edad + " Deporte: " + deporte + " Puntos: " + puntos;
     }
-    
 }
