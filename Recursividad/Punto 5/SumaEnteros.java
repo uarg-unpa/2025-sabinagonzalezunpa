@@ -1,13 +1,14 @@
 public class SumaEnteros {
 
-    public int sumaParesRecursividad(int n){
-        if(n % 2 != 0){
-            n = n - 1;   
-        }
-        if(n == 2){
-            return 2;    
+    public int sumarPares(int n){
+        if(n == 0){                       
+            return 0;
         }else{
-            return n + sumaParesRecursividad(n - 2);
+            if(n % 2 == 0){                   
+                return n + sumarPares(n - 2); 
+            }else{
+                return sumarPares(n - 1);     
+            }
         }
-    }  
+    }
 }
