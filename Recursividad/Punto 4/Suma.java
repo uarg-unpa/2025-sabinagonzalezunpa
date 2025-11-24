@@ -1,5 +1,3 @@
-package Recursividad;
-
 public class Suma {
 
     public int sumaRecursividad(int n){
