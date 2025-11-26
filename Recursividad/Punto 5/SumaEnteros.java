@@ -1,7 +1,7 @@
 public class SumaEnteros {
 
-    public int sumarPares(int n){
-        if(n == 0){                       
+    public static int sumarPares(int n){
+        if(n <= 0){                       
             return 0;
         }else{
             if(n % 2 == 0){                   

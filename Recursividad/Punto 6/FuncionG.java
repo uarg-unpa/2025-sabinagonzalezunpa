@@ -1,6 +1,6 @@
 public class FuncionG {
 
-    public int G(int x, int y) {
+    public static int G(int x, int y) {
         if(x <= y){
             return 1;
         }else{

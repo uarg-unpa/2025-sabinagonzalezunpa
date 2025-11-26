@@ -1,15 +1,15 @@
 public class valorMinimo {
 
-     public int buscarMenor(int v[], int n, int menor){
-   
-      if (n < 0){   
-         return menor;
-      }else{         
-         if (v[n] < menor)         
-            return buscarMenor(v, n-1 ,v[n]);
-         else
-            return buscarMenor(v, n-1 ,menor);
+   public static int buscarMenor(int v[], int n){
+      if (n == v.length - 1){   
+         return v[n];
+      }else{  
+         int minResto = buscarMenor(v, n + 1);       
+         if (v[n] < minResto){      
+            return v[n];
+         }else{
+            return minResto;
+         }
       }
    } 
-    
 }
