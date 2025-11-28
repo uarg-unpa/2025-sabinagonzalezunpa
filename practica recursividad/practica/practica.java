@@ -121,11 +121,11 @@ public class practica {
 
     // Ver si un string es palíndromo.
     public static boolean esPalindromo(String s){
-        if(s.length() <= 1){        // caso base: 0 o 1 letra SIEMPRE es palíndromo
+        if(s.length() <= 1){        
             return true;
         } else {
-            if(s.charAt(0) == s.charAt(s.length() - 1)){   // comparo punta y cola
-                return esPalindromo(s.substring(1, s.length() - 1)); // achico por los dos lados
+            if(s.charAt(0) == s.charAt(s.length() - 1)){   
+                return esPalindromo(s.substring(1, s.length() - 1)); 
             } else {
                 return false;
             }
@@ -228,23 +228,15 @@ public class practica {
 
     // Suma alternada. Ej: arr = {1,2,3,4,5} → 1 - 2 + 3 - 4 + 5
     public static int sumaAlternada(int[] arr, int i){
-        if(i == arr.length){               // caso base
+        if(i == arr.length){               
             return 0;
         } else {
-            if(i % 2 == 0){                // posición par → se suma
+            if(i % 2 == 0){                // posición par, se suma
                 return arr[i] + sumaAlternada(arr, i + 1);
-            } else {                       // posición impar → se resta
+            } else {                       // posición impar,  se resta
                 return (-arr[i]) + sumaAlternada(arr, i + 1);
             }
         }
     }
 
-    // Máximo común divisor (MCD). Usando el algoritmo de Euclides.
-    public static int mcd(int a, int b){
-        if(b == 0){               // caso base
-            return a;
-        } else {
-            return mcd(b, a % b); // paso recursivo
-        }
-    }
 }
